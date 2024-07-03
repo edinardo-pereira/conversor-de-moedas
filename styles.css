@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+    margin-top: 50px;
+    background-image: url(https://img.freepik.com/fotos-premium/o-conceito-de-conversor-de-moeda-entre-dolar-em-iene-e-moedas-fluindo-sobre-fundo-verde-claro_342841-27.jpg);
+    background-size: 100%;
+    display: flex;
+    margin-left: 15%;
+ }
+
+.logo-gif{
+    display: block;
+    width: 60%;
+    margin: 15% auto;
+}
+
+main{
+    background:transparent;
+    width: 270px;
+    border-radius: 5px;
+    margin-left: 70px;
+    padding: 10px 13px 44px ;
+}
+
+select, .valor-para-converter { 
+    width: 100%;
+    height: 28px;
+    background:transparent;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px; 
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+
+label {
+    color: black ;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.botao-converter {
+    width: 100%;
+    height: 28px;
+    top: 329px;
+    left: 24px;
+    border-radius: 5px;
+    background-color: #772fd3;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+
+.resultados {
+    display: flex;
+    background:transparent;
+    width: 30%;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 100px;
+    padding: 20px 23px 54px ;
+}
+
+div { 
+    margin-top: 40%;
+    margin-left: 10%;
+}
+
+.seta-direita{
+    display: block;
+    width: 10%;
+    height: 10%;
+    margin-top: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.valor {
+    font-size: 40px;
+    color: black;
+}
+
+@media (max-width: 800px) {
+
+    .logo-gif{
+        display: block;
+        width: 40%;
+        margin: 15% auto;
+    }
+
+    body{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 110px;
+     }
+
+     main{
+        background:transparent;
+        width: 200px;
+        border-radius: 5px;
+        margin-left: -10px;
+        padding: 10px 13px 44px ;
+    } 
+
+    .resultados {
+        display: flex;
+        background:transparent;
+        width: 30%;
+        border-radius: 5px;
+        margin-left: -15px;
+        margin-top: 10px;
+        padding: 10px 23px 54px ;
+    }
+
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+
+    <main>
+        <img class="logo-gif" src="./acents/gif convertmoney.gif" alt="gif da logo">
+
+        <label>
+            Converter <b>de:</b>
+            <select name="converter-de " id="">
+                <option value="real">R$ Real brasileiro</option>
+                <option value="dolar">US$ Dolar americano</option>
+                <option value="euro">€ Euro</option>
+
+            </select>
+        </label>
+
+        <label>
+            Converter <b>Para:</b>
+            <select name="Converter-para" id="">
+                <option value="real">R$ Real brasileiro</option>
+                <option value="dolar">US$ Dolar americano</option>
+                <option value="euro">€ Euro</option>
+            </select>
+
+
+            <label>
+                Valor
+                <input class="valor-para-converter" placeholder="R$ 10.000,00">
+            </label>
+
+            <button class="botao-converter">Converter</button>
+            
+        </label>
+
+    </main>
+
+    <section class="resultados">
+        <div class="">
+            <img src="./acents/real.png" alt="Bandeira do Brasil">
+            <p>Real</p>
+            <p>R$ 0,00 </p>
+        </div>
+            <img class="seta-direita" src="./acents/setad.png" alt="Seta Apontando Para Direita">
+        <div>
+            <img src="./acents/euro.png" alt="Simbolo do Euro">
+            <p>Euro</p>
+            <p>€ 0,00</p>
+        </div>
+
+    </section>''
+
+</body>
+<script src="script.js"></script>
+</html>
