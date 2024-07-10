@@ -15,18 +15,16 @@
 
         <label>
             Converter <b>de:</b>
-            <select name="converter-de " id="">
+            <select class="converter-de " id="">
                 <option value="real">R$ Real brasileiro</option>
-                <option value="dolar">US$ Dolar americano</option>
-                <option value="euro">€ Euro</option>
 
             </select>
         </label>
 
         <label>
             Converter <b>Para:</b>
-            <select name="Converter-para" id="">
-                <option value="real">R$ Real brasileiro</option>
+
+            <select class="select-moeda">
                 <option value="dolar">US$ Dolar americano</option>
                 <option value="euro">€ Euro</option>
             </select>
@@ -38,26 +36,30 @@
             </label>
 
             <button class="botao-converter">Converter</button>
-            
+
         </label>
 
     </main>
 
     <section class="resultados">
+
         <div class="">
             <img src="./acents/real.png" alt="Bandeira do Brasil">
             <p>Real</p>
-            <p>R$ 0,00 </p>
+            <p class="valor-que-vai-converter">R$ 0,00 </p>
         </div>
-            <img class="seta-direita" src="./acents/setad.png" alt="Seta Apontando Para Direita">
+
+        <img class="seta-direita" src="./acents/setad.png" alt="Seta Apontando Para Direita">
+
         <div>
-            <img src="./acents/euro.png" alt="Simbolo do Euro">
-            <p>Euro</p>
-            <p>€ 0,00</p>
+            <img class="img-valor-convertido" src="./acents/euro.png" alt="Simbolo do Euro">
+            <p class="nome-moeda">Euro</p>
+            <p class="valor-convertido">€ 0,00</p>
         </div>
 
     </section>''
 
 </body>
-<script src="script.js"></script>
+<script src="script.js"> </script>
+
 </html>
