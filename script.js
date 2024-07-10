@@ -6,8 +6,8 @@ function converterValor() {
     const valorParaconverter = document.querySelector(".valor-que-vai-converter") // 1° paragrafo onde coloca o valor a converter 
     const resultadoDaConversao = document.querySelector(".valor-convertido") //2° paragrafo onde coloca o valor convertido
 
-    const dolarDoDia = 5.47
-    const euroDoDia = 5.92
+    const dolarDoDia = 5.39
+    const euroDoDia = 5.84
 
     if (selectMoeda.value == "dolar") {
         resultadoDaConversao.innerHTML = new Intl.NumberFormat("en-US", {
