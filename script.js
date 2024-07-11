@@ -8,6 +8,9 @@ function converterValor() {
 
     const dolarDoDia = 5.39
     const euroDoDia = 5.84
+    const dinarDoDia = 17.76
+    const pesoDoDia = 0.005876
+    const rialDoDia = 0.0001285
 
     if (selectMoeda.value == "dolar") {
         resultadoDaConversao.innerHTML = new Intl.NumberFormat("en-US", {
@@ -21,11 +24,30 @@ function converterValor() {
             currency: 'EUR'
         }).format(converterValorPara / euroDoDia)
     }
+    if (selectMoeda.value == "dinar") {
+        resultadoDaConversao.innerHTML = new Intl.NumberFormat("en", {
+            style: 'currency',
+            currency: 'KWD'
+        }).format(converterValorPara / dinarDoDia)
+    }
+    if(selectMoeda.value == "peso") {
+        resultadoDaConversao.innerHTML = new Intl.NumberFormat("es", {
+            style: 'currency',
+            currency: 'ARS'
+        }).format(converterValorPara / pesoDoDia)
+    }
+    if(selectMoeda.value == "rial"){
+        resultadoDaConversao.innerHTML = new Intl.NumberFormat("en", {
+            style:'currency',
+            currency:'IRR'
+        }).format(converterValorPara / rialDoDia)
+    }
 
     valorParaconverter.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL"
     }).format(converterValorPara)
+
 
 }
 
@@ -41,6 +63,21 @@ function changeSelecte() {
     if (selectMoeda.value == "euro") {
         nomeMoeda.innerHTML = "Euro"
         imgMoeda.src = " ./acents/euro.png "
+    }
+
+    if (selectMoeda.value == "dinar") {
+        nomeMoeda.innerHTML = " Dinar Kuwaiti"
+        imgMoeda.src = "./acents/dinar.png"
+    }
+
+    if (selectMoeda.value == "peso") {
+        nomeMoeda.innerHTML = "Peso Argentino"
+        imgMoeda.src = "./acents/peso.png"
+    }
+
+    if(selectMoeda.value == "rial") {
+        nomeMoeda.inerhtml = "Rial Iraniano"
+        imgMoeda.src = "./acents/rial.png"
     }
     converterValor()
 }
